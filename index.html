@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>Code</title>
+</head>
+<link rel="stylesheet" href="./output.css">
+<script src="./index.js" defer></script>
+<body>
+    <!--
+        Build a verification code form.
+        Focusing on any input should bring the focus to the first empty input.
+        Entering a value should switch the focus to the next input.
+        Deleting a value should delete the last filled value.
+        Submitting the form should alert the submitted code.
+        oninput="onChangeHandler(this.value)"
+    -->
+
+    <main class="rounded-lg bg-white shadow-md py-6 px-[5rem] text-center space-y-6">
+        <h1 class="font-bold text-[2rem]" >Enter code:</h1>
+        <form class="" >
+            <input type="number"   class="text-center font-bold border-2 focus:ring-4 focus:ring-indigo-500 transition-all ease-in-out duration-200 focus:outline-none border-gray-400 w-[2.9rem] rounded-md py-1 px-2 text-[1.3rem]" >
+            <input type="number" class="text-center font-bold border-2 focus:ring-4 focus:ring-indigo-500 transition-all ease-in-out duration-200 focus:outline-none border-gray-400 w-[2.9rem] rounded-md py-1 px-2 text-[1.3rem]" >
+            <input type="number" class="text-center font-bold border-2 focus:ring-4 focus:ring-indigo-500 transition-all ease-in-out duration-200 focus:outline-none border-gray-400 w-[2.9rem] rounded-md py-1 px-2 text-[1.3rem]" >
+            <span class="mx-2 inline-block w-[1.3rem] h-[2.5px] bg-gray-400"></span>
+            <input type="number" class="text-center font-bold border-2 focus:ring-4 focus:ring-indigo-500 transition-all ease-in-out duration-200 focus:outline-none border-gray-400 w-[2.9rem] rounded-md py-1 px-2 text-[1.3rem]" >
+            <input type="number" class="text-center font-bold border-2 focus:ring-4 focus:ring-indigo-500 transition-all ease-in-out duration-200 focus:outline-none border-gray-400 w-[2.9rem] rounded-md py-1 px-2 text-[1.3rem]" >
+            <input type="number" class="text-center font-bold border-2 focus:ring-4 focus:ring-indigo-500 transition-all ease-in-out duration-200 focus:outline-none border-gray-400 w-[2.9rem] rounded-md py-1 px-2 text-[1.3rem]" >
+            
+            <button id="submit" class="block mx-auto mt-3 rounded-sm px-4 py-2 bg-gray-200 hover:bg-gray-400 hover:text-white transition-all ease-in-out duration-200 active:translate-y-1">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
